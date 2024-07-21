@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from 'react-redux';
 import {getUserAlertValues} from '../redux/userGoldDetails/reducer';
 import {priceService} from '../api/client';
 import priceCalculatorService from '../services/priceCalculatorService';
-import {Alert} from 'react-native';
 import {setUserAlertValues} from '../redux/userGoldDetails/action';
 const HTTP_POOLING_INTERVAL = 1000 * 60 * 60;
 
@@ -45,7 +44,7 @@ function usePoolingPrice() {
           dispatch(setUserAlertValues({...alertDetails, buy: null}));
         };
         priceCalculatorService.priceAlert(
-          'The buy price has exceeded your set limit.\nThe current limit will now be removed.',
+          'The buying price has exceeded your set limit.\nThe current limit will now be removed.',
           resetBuyAlert,
         );
       }
