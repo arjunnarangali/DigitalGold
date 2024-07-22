@@ -2,7 +2,7 @@
 
 # features
 1. View up-to-date gold prices
-2. Buy and sell gold
+2. Buy and Sell gold
 3. Set buy/sell price alerts
 
 
@@ -16,6 +16,6 @@
 # Configuration:
 1. Create a .env file (ignore it in version control):
     BASE_URL=https://partners-staging.safegold.com/
-    BEARER_TOKEN=<Your Token Here>
+    BEARER_TOKEN=< your Token Here >
 2. iOS only: Follow instructions at react-native-vector-icons to set up fonts (MaterialIcons used). 
 Since I am using a Windows machine, I am unable to test and integrate  `react-native-vector-icons` on iOS.
