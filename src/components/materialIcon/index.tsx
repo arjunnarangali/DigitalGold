@@ -1,6 +1,6 @@
 import {isEqual} from 'lodash';
 import React from 'react';
-import {StyleProp, ViewStyle} from 'react-native';
+import {StyleProp, TextStyle} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 type props = {
@@ -8,7 +8,7 @@ type props = {
   size: number;
   color: string;
   onPress?: () => void;
-  style?: StyleProp<ViewStyle>;
+  style?: StyleProp<TextStyle>;
 };
 const MaterialIcons = ({iconName, size, color, onPress, style}: props) => {
   return <Icon name={iconName} size={size} color={color} onPress={onPress} style={style} />;

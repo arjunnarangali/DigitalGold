@@ -43,16 +43,19 @@ const PriceAlertModal = () => {
   }, [userAlertValues.buy]);
   return (
     <>
-      <MaterialIcons
-        iconName={
-          userAlertValues?.buy || userAlertValues?.sell ? 'notifications-active' : 'notifications'
-        }
-        size={18}
-        color={userAlertValues?.buy || userAlertValues?.sell ? '#E8CF8D' : '#f2f2f2'}
+      <TouchableOpacity
+        style={style.PD_10}
         onPress={() => {
           setIsVisible(true);
-        }}
-      />
+        }}>
+        <MaterialIcons
+          iconName={
+            userAlertValues?.buy || userAlertValues?.sell ? 'notifications-active' : 'notifications'
+          }
+          size={18}
+          color={userAlertValues?.buy || userAlertValues?.sell ? '#E8CF8D' : '#f2f2f2'}
+        />
+      </TouchableOpacity>
       <Modal visible={isVisible} transparent>
         <TouchableWithoutFeedback
           onPress={() => {

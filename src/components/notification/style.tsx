@@ -63,6 +63,7 @@ const useCreateStyle = () => {
       paddingLeft: 10,
     },
     confirmButtonStyle: {borderRadius: 10, padding: 5, height: 50},
+    PD_10: {padding: 10},
   });
 };
 
